@@ -1,0 +1,53 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MacPorts binary archives for Tiger PPC (experimental)</title>
+<style>body {
+  background-color: Canvas;
+  color: CanvasText;
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+}
+code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+}
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+pre {
+  border: 1px dashed CanvasText;
+  padding: 0.25em 0.5em;
+  width: fit-content;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>MacPorts binary archives for Tiger PPC (experimental)</h1>
+<p>This is a basic GitHub Pages site to share some experimental MacPorts packages for macOS 10.4 Tiger PPC
+using the mechanism described at <a href="https://trac.macports.org/wiki/howto/ShareArchives2">trac.macports.org/wiki/howto/ShareArchives2</a>.</p>
+
+<h2>Set up</h2>
+
+<p>To use binary packages from here, add the following to the top of <code>/opt/local/etc/macports/archive_sites.conf</code></p>
+
+<pre><code>name                glebm-macports-tiger-ppc-binary-archives
+urls                http://macports-tiger-ppc.glebm.com/dist/
+</code></pre>
+</body>
+
+<p>Then, download the key from <code><a href="dist/pubkey.pem">dist/pubkey.pem</a></code> to:<br>
+<code>/opt/local/share/macports/glebm-macports-tiger-ppc-binary-archives-pubkey.pem</code><br>
+and add its path to:<br>
+<code>/opt/local/etc/macports/pubkeys.conf</code></p>
+
+<p><a href="dist/index.html">Package list</a></code></p>
+
+<h2>Hosting your own version</h2>
+
+See <a href="https://github.com/glebm/macports-tiger-ppc-binary-archives">github.com/glebm/macports-tiger-ppc-binary-archives</a>.
+</main>
