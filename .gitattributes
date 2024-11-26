@@ -1,0 +1,2 @@
+# GitHub doesn't support files over 100 MiB, so we store them in LFS
+gcc14-*.tbz2 filter=lfs diff=lfs merge=lfs -text
