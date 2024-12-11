@@ -8,6 +8,7 @@ ROW_REGEX = %r{<tr><td>.*?<a href="([^"]+)">.*?</td><td>.*?</td><td>(.*?)</td></
 
 def update_timestamps(dir)
   Dir.chdir dir do
+    return unless File.directory?(dir)
     File.read('index.html').scan(ROW_REGEX).each do |(p, t)|
       path = CGI::unescapeHTML(CGI::unescape(p))
       if File.basename(path) == 'index.html'
